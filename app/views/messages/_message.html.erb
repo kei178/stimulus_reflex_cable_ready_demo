@@ -9,7 +9,7 @@
       <%= message.body %>
     </div>
     <div class="actions">
-      <%= link_to '#', class: 'ui mini blue label', data: { reflex: 'click->MessageReflex#like', id: message.id } do %>
+      <%= link_to '#', class: 'ui mini blue label', data: { reflex: 'click->MessagesReflex#like', id: message.id } do %>
         Like <%= tag.span message.like_count, id: "message-#{message.id}-likes" %>
       <% end %>
     </div>
