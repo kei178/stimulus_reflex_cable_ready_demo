@@ -1,0 +1,15 @@
+<%= form_with(model: @message, local: true, class: 'ui form') do |form| %>
+  <div class="field">
+    <%= form.label :username, 'Your Name' %>
+    <%= form.text_field :username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body, rows: 3, placeholder: 'Say something...' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Post', class: 'ui button fluid' %>
+  </div>
+<% end %>
