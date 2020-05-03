@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Environments
 
-Things you may want to cover:
+```
+ruby -v
+ruby 2.6.4p104 (2019-08-28 revision 67798) [x86_64-darwin18]
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rails -v
+Rails 6.0.2.2
+```
