@@ -1,4 +1,4 @@
-<%= form_with(model: @message, local: true, class: 'ui form') do |form| %>
+<%= form_with(model: @message, class: 'ui form') do |form| %>
   <div class="field">
     <%= form.label :username, 'Your Name' %>
     <%= form.text_field :username %>
@@ -6,7 +6,7 @@
 
   <div class="field">
     <%= form.label :body %>
-    <%= form.text_area :body, rows: 3, placeholder: 'Say something...' %>
+    <%= form.text_area :body, rows: 3, placeholder: 'Say something...', id: 'message-form-body' %>
   </div>
 
   <div class="actions">

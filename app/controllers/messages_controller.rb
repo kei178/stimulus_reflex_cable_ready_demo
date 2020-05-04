@@ -14,8 +14,6 @@ class MessagesController < ApplicationController
       html: render_to_string(partial: 'message', locals: { message: message })
     )
     cable_ready.broadcast
-
-    redirect_to messages_path
   end
 
   private
